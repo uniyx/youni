@@ -1,9 +1,11 @@
 function createChart() {
+    var name = document.getElementById("name").value;
+
     var r1 = document.getElementById("r1").value;
     var r2 = document.getElementById("r2").value;
     var r3 = document.getElementById("r3").value;
 
-    r1 = r1.split(",");
+    r1 = r1.split(",").map(Number);
     r2 = r2.split(",");
     r3 = r3.split(",");
 
@@ -11,10 +13,16 @@ function createChart() {
     r2.push(r2[0]);
     r3.push(r3[0]);
 
+    // Sum total score
+    sum = r1.reduce(function (a, b) { return a + b; }, -r1[0]);
+
+    // Show score
+    document.getElementById("label-score").innerHTML = name + '\'s' + " Score: " + sum;
+
     // Data for first scatter polar chart
     var data1 = {
         type: "scatterpolar",
-        name: "Chart 1",
+        name: "You",
         r: r1,
         theta: ["a", "b", "c", "d", "e", "a"],
         fill: "toself"

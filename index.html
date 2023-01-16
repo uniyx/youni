@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <title>YouNi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="📚 Get on track.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+
+    <link rel="stylesheet" href="youni.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
-    <h1>Scatter Polar Chart Comparison</h1>
+    <h1>YouNi</h1>
+    <p>Plan your academic and career goals.</p>
     <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name"><br><br>
         <label for="r1">Data for Chart 1's r array:</label>
         <input type="text" id="r1" name="r1" value="5, 5, 5, 5, 5"><br><br>
         <label for="r2">Data for Chart 2's r array:</label>
@@ -24,12 +34,14 @@
             <option value="3, 3, 3, 3, 3">Dataset 3</option>
         </select>
         <button type="button" onclick="createChart()">Create Chart</button>
-    </form>
+    </form><br>
+
+    <label id="label-score">Score: </label>
 
     <div id="scatter-polar-chart"></div>
 
     <script src="index.js"></script>
-    
+
 </body>
 
 </html>
