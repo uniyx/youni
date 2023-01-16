@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <h1>Scatter Polar Chart Comparison</h1>
+    <form>
+        <label for="r1">Data for Chart 1's r array:</label>
+        <input type="text" id="r1" name="r1" value="5, 5, 5, 5, 5"><br><br>
+        <label for="r2">Data for Chart 2's r array:</label>
+        <select id="r2" name="r2">
+            <option value="3, 3, 3, 3, 3">Dataset 1</option>
+            <option value="4, 4, 4, 4, 4">Dataset 2</option>
+            <option value="5, 5, 5, 5, 5">Dataset 3</option>
+        </select>
+        <br><br>
+        <label for="r3">Data for Chart 3's r array:</label>
+        <select id="r3" name="r3">
+            <option value="1, 1, 1, 1, 1">Dataset 1</option>
+            <option value="2, 2, 2, 2, 2">Dataset 2</option>
+            <option value="3, 3, 3, 3, 3">Dataset 3</option>
+        </select>
+        <button type="button" onclick="createChart()">Create Chart</button>
+    </form>
+
+    <div id="scatter-polar-chart"></div>
+
+    <script src="index.js"></script>
+    
+</body>
+
+</html>
