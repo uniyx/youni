@@ -12,10 +12,9 @@ body {
     background: #0d1117
 }
 
-nav {
+.headerlinks {
     background: #4B0082;
     height: 80px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,7 +52,7 @@ main {
 }
 
 header {
-    padding: 50px;
+    padding: 35px;
     font-size: 1.5vw;
     text-align: center;
 }
@@ -89,7 +88,7 @@ header {
 }
 
 .test {
-    padding-top: 50px;
+    padding-top: 25px;
     font-size: 1.5vw;
 }
 
@@ -99,4 +98,37 @@ header {
 
 .test select {
     height: 1.5vw;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    background: rgb(24, 26, 27);
+    padding: 20px 15px 74px;
+}
+
+.footer_copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.footer nav a {
+    color: #c9d1d9;
+    font-weight: bold;
+}
+
+.footer nav a:hover {
+    color: #58a6ff;
+    transition: .3s;
 }
