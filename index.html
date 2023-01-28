@@ -76,31 +76,32 @@
             </div>
         </section>
 
-        <form>
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="r1">Data for Chart 1's r array:</label>
-            <input type="text" id="r1" name="r1" value="5, 5, 5, 5, 5"><br><br>
-            <label for="r2">Data for Chart 2's r array:</label>
-            <select id="r2" name="r2">
-                <option value="3, 3, 3, 3, 3">Dataset 1</option>
-                <option value="4, 4, 4, 4, 4">Dataset 2</option>
-                <option value="5, 5, 5, 5, 5">Dataset 3</option>
-            </select>
-            <br><br>
-            <label for="r3">Data for Chart 3's r array:</label>
-            <select id="r3" name="r3">
-                <option value="1, 1, 1, 1, 1">Dataset 1</option>
-                <option value="2, 2, 2, 2, 2">Dataset 2</option>
-                <option value="3, 3, 3, 3, 3">Dataset 3</option>
-            </select>
-            <button type="button" onclick="createChart()">Create Chart</button>
-        </form><br>
+        <div class="test">
+            <form>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name"><br>
+                <label for="r1">Data for Chart 1's r array:</label>
+                <input type="text" id="r1" name="r1" value="5, 5, 5, 5, 5"><br>
+                <label for="r2">Data for Chart 2's r array:</label>
+                <select id="r2" name="r2">
+                    <option value="3, 3, 3, 3, 3">Dataset 1</option>
+                    <option value="4, 4, 4, 4, 4">Dataset 2</option>
+                    <option value="5, 5, 5, 5, 5">Dataset 3</option>
+                </select>
+                <br>
+                <label for="r3">Data for Chart 3's r array:</label>
+                <select id="r3" name="r3">
+                    <option value="1, 1, 1, 1, 1">Dataset 1</option>
+                    <option value="2, 2, 2, 2, 2">Dataset 2</option>
+                    <option value="3, 3, 3, 3, 3">Dataset 3</option>
+                </select>
+                <button type="button" onclick="createChart()">Create Chart</button>
+            </form><br>
 
-        <label id="label-score">Score: </label>
+            <label id="label-score">Score: </label>
 
-        <div id="scatter-polar-chart"></div>
-
+            <div id="scatter-polar-chart"></div>
+        </div>
     </main>
 
     <script src="index.js"></script>
