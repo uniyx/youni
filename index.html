@@ -6,39 +6,102 @@
     <title>YouNi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="📚 Get on track.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
 
     <link rel="stylesheet" href="youni.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
-    <h1>YouNi</h1>
-    <p>Plan your academic and career goals.</p>
-    <form>
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="r1">Data for Chart 1's r array:</label>
-        <input type="text" id="r1" name="r1" value="5, 5, 5, 5, 5"><br><br>
-        <label for="r2">Data for Chart 2's r array:</label>
-        <select id="r2" name="r2">
-            <option value="3, 3, 3, 3, 3">Dataset 1</option>
-            <option value="4, 4, 4, 4, 4">Dataset 2</option>
-            <option value="5, 5, 5, 5, 5">Dataset 3</option>
-        </select>
-        <br><br>
-        <label for="r3">Data for Chart 3's r array:</label>
-        <select id="r3" name="r3">
-            <option value="1, 1, 1, 1, 1">Dataset 1</option>
-            <option value="2, 2, 2, 2, 2">Dataset 2</option>
-            <option value="3, 3, 3, 3, 3">Dataset 3</option>
-        </select>
-        <button type="button" onclick="createChart()">Create Chart</button>
-    </form><br>
+    <nav>
+        <label class="logo">YouNi</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tests</a></li>
+            <li><a href="#">Growth</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <button type="button">Log in</button>
+    </nav>
 
-    <label id="label-score">Score: </label>
+    <main class="main">
+        <header>
+            <h1>
+                Plan your academic and career goals
+            </h1>
+        </header>
 
-    <div id="scatter-polar-chart"></div>
+        <section class="tips">
+            <div class="tip">
+                <div class="text">
+                    <div class="emoji">
+                        📚
+                    </div>
+                    <div class="title">
+                        Complete the test
+                    </div>
+                    <div class="subtitle">
+                        Discover more yourself
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip">
+                <div class="text">
+                    <div class="emoji">
+                        🧮
+                    </div>
+                    <div class="title">
+                        View Detailed Results
+                    </div>
+                    <div class="subtitle">
+                        Learn how you compare to other candidates
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip">
+                <div class="text">
+                    <div class="emoji">
+                        🔬
+                    </div>
+                    <div class="title">
+                        Unlock Your Potential
+                    </div>
+                    <div class="subtitle">
+                        Grow into the person you want to be
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="r1">Data for Chart 1's r array:</label>
+            <input type="text" id="r1" name="r1" value="5, 5, 5, 5, 5"><br><br>
+            <label for="r2">Data for Chart 2's r array:</label>
+            <select id="r2" name="r2">
+                <option value="3, 3, 3, 3, 3">Dataset 1</option>
+                <option value="4, 4, 4, 4, 4">Dataset 2</option>
+                <option value="5, 5, 5, 5, 5">Dataset 3</option>
+            </select>
+            <br><br>
+            <label for="r3">Data for Chart 3's r array:</label>
+            <select id="r3" name="r3">
+                <option value="1, 1, 1, 1, 1">Dataset 1</option>
+                <option value="2, 2, 2, 2, 2">Dataset 2</option>
+                <option value="3, 3, 3, 3, 3">Dataset 3</option>
+            </select>
+            <button type="button" onclick="createChart()">Create Chart</button>
+        </form><br>
+
+        <label id="label-score">Score: </label>
+
+        <div id="scatter-polar-chart"></div>
+
+    </main>
 
     <script src="index.js"></script>
 
